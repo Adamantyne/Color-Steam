@@ -41,7 +41,7 @@ export default function SignIn() {
     <BackgroundContainer bgImage="url('https://images5.alphacoders.com/981/thumb-1920-981420.png')">
       <AuthContainer>
         <SteamLogo></SteamLogo>
-        <h1>Selecione a ampanha:</h1>
+        <h1>Selecione a campanha:</h1>
         <IconsContainer>
           <IconContainer
             onClick={() => setIconSelected("green")}
