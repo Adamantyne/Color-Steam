@@ -43,7 +43,6 @@ export default function Game() {
     const data = await getRequisition(`comments/${gameId}`, contextData);
     setComments(data);
   }
-  console.log(comments);
 
   return (
     <BackgroundContainer
