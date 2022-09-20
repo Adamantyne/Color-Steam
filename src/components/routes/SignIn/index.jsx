@@ -20,10 +20,6 @@ export default function SignIn() {
 
   function submitData(e) {
     e.preventDefault();
-    if (iconSelected === "yellow") {
-      window.alert("Yellow_Stem estará disponível em breve");
-      return;
-    }
     window.alert(
       "ATENÇÂO: Esse site possui um fim acadêmico. As marcas citadas não tem nenhuma relação com ele. Todas as informações presentes foram extraídas do aplicativo da steam e da web."
     );

@@ -6,26 +6,29 @@ import { getContext } from "../../../hooks/UserContext";
 import Logo from "../MicroElements/Logo";
 
 export default function Header(props) {
-  const { backRoute } = props;
+  const { backRoute, border } = props;
   const { name, imageURL } = getContext().contextData;
   const navigate = useNavigate();
+  const borderColor = border ? border : "var(--blue-border)";
 
   return (
-    <HeaderContainer>
+    <HeaderContainer border={borderColor}>
       <InfosContainer>
         <IoArrowUndoSharp onClick={() => navigate(backRoute)} />
         <img src={imageURL} alt="imagem de perfil" />
         <h1>{name}</h1>
       </InfosContainer>
       <LogoContainer>
-        <Logo />
+        <Logo border={border}/>
       </LogoContainer>
     </HeaderContainer>
   );
 }
 
 const HeaderContainer = styled.header`
-  border-bottom: var(--blue-border);
+  border-bottom: ${(props) => {
+    return props.border;
+  }};
   position: fixed;
   display: flex;
   align-items: center;
@@ -37,6 +40,7 @@ const HeaderContainer = styled.header`
   box-shadow: var(--shadow);
   background-color: var(--color-main);
   padding: 0 20px 0 20px;
+  z-index: 1;
 `;
 
 const LogoContainer = styled.div`
