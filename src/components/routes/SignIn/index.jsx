@@ -13,7 +13,7 @@ import SteamLogo from "../../layout/MicroElements/Logo";
 import BackgroundContainer from "../../layout/MacroElements/BackgroundContainer";
 
 export default function SignIn() {
-  const [iconSelected, setIconSelected] = useState("green");
+  const [iconSelected, setIconSelected] = useState("yellow");
   const [userData, setUserData] = useState({ imageURL: "", name: "" });
   const { contextData, setContext } = getContext();
   const navigate = useNavigate();
