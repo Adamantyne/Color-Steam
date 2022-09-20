@@ -19,12 +19,14 @@ import {
 import Infos from "./Infos";
 
 export default function Yellow(props) {
-  const [games, setGames] = useState([]);
+  const [games, setGames] = useState([{ iconUrl: "", title: "", id: "" }]);
   const { contextData } = getContext();
   const [selectedOption, setSelectedOption] = useState("infos");
   const [indication, setIndication] = useState({ indication: "" });
   const navigate = useNavigate();
-
+  
+  console.log(games);
+  
   useEffect(() => {
     getGames();
   }, []);
@@ -39,7 +41,7 @@ export default function Yellow(props) {
     setIndication({ indication: "" });
   }
 
-  function openGame(gameId){
+  function openGame(gameId) {
     navigate(`/game/${gameId}`);
   }
 
