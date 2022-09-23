@@ -25,8 +25,6 @@ export default function Yellow(props) {
   const [indication, setIndication] = useState({ indication: "" });
   const navigate = useNavigate();
   
-  console.log(games);
-  
   useEffect(() => {
     getGames();
   }, []);
