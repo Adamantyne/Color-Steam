@@ -78,7 +78,22 @@ export default function Infos() {
             juntos!
           </strong>
         </p>
+        <YoutubeEmbed />
       </div>
     </InfosContainer>
+  );
+}
+
+function YoutubeEmbed() {
+  return (
+    <p>
+      <a
+        href="https://www.youtube.com/watch?v=hkM9HEXqGuo&t=3s"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Clique aqui para ver o vídeo
+      </a>
+    </p>
   );
 }
