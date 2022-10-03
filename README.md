@@ -33,7 +33,7 @@ HTTPS: `$ git clone https://github.com/Adamantyne/Color-Steam-front.git`
 <br />
 <br />
 **Importante:** para executar o projeto, são necessários algusn pré-requisitos:
-- Back-end configurado e rodando localmente ( link back-end: <a target="_blank" href="https://github.com/Adamantyne/Color_Steam-back">https://github.com/Adamantyne/Color_Steam-back </a>);
+- Back-end configurado e rodando localmente ( <a target="_blank" href="https://github.com/Adamantyne/Color_Steam-back">https://github.com/Adamantyne/Color_Steam-back </a>);
 - Node/npm;
 - Banco de dados PostgreSQL;
 
