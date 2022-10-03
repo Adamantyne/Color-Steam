@@ -1,7 +1,7 @@
 # Color-Steam
 Color_steam é um projeto acadêmico fundamentado em propostas de campanhas ambientais (Green_Steam) e sociais (Yellow_Steam) a partir da empresa Steam.
 
-**Ferramentas:** JS, JSX, HTML, CSS, React, Styled-Components
+**Ferramentas:** JavaScript, JSX, HTML, CSS, React, Styled-Components
 
 ## Green_Steam: 
 Nessa campanha são apresentadas ideias para a criação de um mini-game dentro da plataforma Steam com o objetivo de incentivar o reflorestamento de áreas desmatadas.
